@@ -259,10 +259,15 @@ enum DayIslandPainter {
         for p in model.pickups where !picked.contains(p.id) {
             let c = map.project(p.pos)
             let pulse = 0.5 + 0.5 * sin(t * 3 + Double(p.id))
-            Paint.circle(ctx, c, u * 0.3, .white.opacity(0.35 + 0.25 * pulse))
-            pickupGlyph(ctx, c, p.material, u * 0.2)
+            Paint.circle(ctx, c, u * 0.46, .white.opacity(0.3 + 0.3 * pulse))
+            pickupGlyph(ctx, c, p.material, u * 0.3)
+            // きらり（十字の光）
+            let k = u * (0.18 + 0.08 * pulse)
+            let sp = c + CGPoint(x: u * 0.28, y: -u * 0.3)
+            Paint.poly(ctx, [sp + CGPoint(x: 0, y: -k), sp + CGPoint(x: k * 0.25, y: 0), sp + CGPoint(x: 0, y: k), sp + CGPoint(x: -k * 0.25, y: 0)], .white)
+            Paint.poly(ctx, [sp + CGPoint(x: -k, y: 0), sp + CGPoint(x: 0, y: k * 0.25), sp + CGPoint(x: k, y: 0), sp + CGPoint(x: 0, y: -k * 0.25)], .white)
             if p.material == model.tideBonus {
-                Paint.circle(ctx, c + CGPoint(x: u * 0.22, y: -u * 0.22), u * 0.07, Day.coral)
+                Paint.circle(ctx, c + CGPoint(x: -u * 0.3, y: -u * 0.3), u * 0.09, Day.coral)
             }
         }
     }
@@ -408,13 +413,12 @@ struct DayBar: View {
                 }
             }
             .buttonStyle(ChunkyButtonStyle(fill: Night.mistDeep, edge: Night.island))
-            .frame(maxWidth: .infinity)
-            .layoutPriority(1)
             .accessibilityIdentifier("main.night")
         }
         .padding(.horizontal, 16)
         .padding(.top, 10)
         .padding(.bottom, 6)
+        .frame(maxWidth: .infinity)
         .background(Day.sand.opacity(0.96).ignoresSafeArea(edges: .bottom))
     }
 }

@@ -248,14 +248,12 @@ struct NightSim {
         }
     }
 
-    /// 決まった刻みで、まとめて進める（撮影・テスト）。autopilot なら自分で逃げ、札は最初のものを選ぶ
+    /// 決まった刻みで、まとめて進める（撮影・テスト）。札は最初のものを選ぶ。autopilot なら自分で逃げる
     mutating func simulate(seconds: Double, autopilot: Bool) {
         var t = 0.0
         while t < seconds && outcome == nil {
-            if autopilot {
-                if pendingUpgrades != nil { choose(0) }
-                input = autoInput()
-            }
+            if pendingUpgrades != nil { choose(0) }
+            if autopilot { input = autoInput() }
             step(1.0 / 60)
             t += 1.0 / 60
         }
