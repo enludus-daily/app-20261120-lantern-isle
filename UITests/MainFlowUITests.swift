@@ -22,11 +22,15 @@ enum MainFlow {
         .tap("main.pickup0"),
         .tap("main.pickup1"),
         .tap("main.craft"),
+        .wait(0.8),
         .tap("main.build_lighthouse"),
         .tap("main.closeSheet"),
+        .wait(0.8),
         .tap("main.deliver"),
         .tap("main.residents"),
+        .wait(0.8),
         .tap("main.closeSheet"),
+        .wait(0.8),
         .tap("main.night"),
         .wait(4.0),
         .tap("main.retreat"),
@@ -34,6 +38,7 @@ enum MainFlow {
         .tap("main.backToDay"),
         .wait(1.0),
         .tap("main.records"),
+        .wait(0.8),
         .tap("main.closeSheet"),
     ]
 }
@@ -127,8 +132,12 @@ final class MainFlowUITests: XCTestCase {
     private func assertOnScreen(_ element: XCUIElement, in app: XCUIApplication, name: String, requireHittable: Bool = true) {
         // 切り替えの動き（フェードなど）が終わるまで最大 3 秒待ってから判定する。
         // 2026-11-15：案内→ホームの切り替えの途中で判定して、押せる部品を「押せない」と誤って落とした（ひと駅なぞとき）
-        let hittable = XCTNSPredicateExpectation(predicate: NSPredicate(format: "hittable == true"), object: element)
-        let result = XCTWaiter.wait(for: [hittable], timeout: 3)
+        // 押せるかを確かめるときだけ待つ（並んでいる部品の確認で毎回 3 秒待つと、テストが 10 分を超える。2026-11-20 灯り島）
+        var result = XCTWaiter.Result.completed
+        if requireHittable {
+            let hittable = XCTNSPredicateExpectation(predicate: NSPredicate(format: "hittable == true"), object: element)
+            result = XCTWaiter.wait(for: [hittable], timeout: 3)
+        }
         let window = app.windows.firstMatch.frame
         let frame = element.frame
         XCTAssertFalse(frame.isEmpty, "\(name) の大きさが 0 です")
