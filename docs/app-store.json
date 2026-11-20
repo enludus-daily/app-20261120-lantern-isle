@@ -1,21 +1,21 @@
 {
   "_doc": "App Store Connect に API で入れる情報（.github/workflows/asc.yml の metadata が読む）。文字数：name・subtitle 30、keywords 100（カンマ区切り）、promotionalText 170、description 4000。カテゴリの ID は EDUCATION・PRODUCTIVITY・UTILITIES・LIFESTYLE・HEALTH_AND_FITNESS など。審査への提出と App プライバシーの申告は本人が行う。",
   "locale": "ja",
-  "name": "",
-  "subtitle": "",
-  "primaryCategory": "",
-  "secondaryCategory": "",
+  "name": "灯り島：昼は島づくり、夜は生きのびる",
+  "subtitle": "島を作って、3分の夜を越える",
+  "primaryCategory": "GAMES",
+  "secondaryCategory": "ENTERTAINMENT",
   "supportUrl": "https://github.com/enludus-daily/app-20261120-lantern-isle/issues",
   "privacyPolicyUrl": "https://github.com/enludus-daily/app-20261120-lantern-isle/blob/main/PRIVACY.md",
-  "keywords": "",
-  "promotionalText": "",
-  "description": "",
-  "whatToTest": "",
+  "keywords": "サバイバー,島,島暮らし,クラフト,ローグライク,片手,放置,灯台,どうぶつ,ゲーム,サバイバル,のんびり,夜,自動攻撃",
+  "promotionalText": "昼は浜で拾って灯台やランタンを作り、夜は3分、もやから生きのびる。島が素敵になるほど夜が楽になる。毎日の潮で拾い物が変わる。",
+  "description": "昼はのんびり島暮らし、夜は3分のサバイバー。\n\n■ 昼：島づくり\n浜できらりと光る貝・流木・花・石を拾って、灯台やランタン、柵や見張り台を作ります。毎日の潮で拾い物が変わり、「潮の恵み」の素材はいつもより多く拾えます。\n島の小さな住人たちの頼みごとをかなえると、引っ越してきて夜の仲間になります。\n\n■ 夜：3分のサバイバー\n島に紫のもやが押し寄せます。画面のどこかに指を置いて動かすだけ。攻撃は自動です。\n昼に作った物が、そのまま夜の力になります。灯台は見える範囲を広げて回る光でもやを払い、柵はもやを押し返し、ランタンの光の玉があなたのまわりを回ります。\n光る砂を集めるとレベルアップ。時間が止まり、3枚の札から1枚を選べます。2分30秒には大もやが現れます。\n\n■ 夜明けのたびに強くなる島\n夜に集めた光る砂で、作り物をレベル3まで強くできます。夜ごとに少しずつ手強くなる「第N夜」、連続の日、いちばん長い夜を記録します。\n\n■ 無料で遊べるもの\n作り物12・住人5人・毎日の潮と夜は、ずっと無料です。\n\n■ 灯り島 Pro（買い切り）\n・作り物が6つ増える（星の望遠鏡・ほら貝の大砲・ホタルのびん・灯りの小舟・雪あかり・祭りのやぐら）\n・住人が3人増える（砂ギツネ・メンフクロウ・ヤドカリ）\n・夜明けの来ない「終わらない夜」\n家族共有に対応しています。\n\n■ プライバシー\n島のデータはこの端末の中だけに保存します。ログイン・広告・解析はありません。",
+  "whatToTest": "1) 案内3ページのあと、昼の島で浜の光る拾い物をタップして素材が増えること。2) 「作る」で灯台などを作ると島に物が増えること。3) 住人に「届ける」と引っ越してくること。4) 「夜へ」で3分の夜になり、指でどこでも動けて攻撃が自動で出ること、レベルアップで3枚から選べること。5) 夜明けの後に一度だけ Pro の画面が出て、購入と復元ができること。",
   "en-US": {
-    "name": "",
-    "subtitle": "",
-    "keywords": "",
-    "promotionalText": "",
-    "description": ""
+    "name": "Lantern Isle: Craft & Survive",
+    "subtitle": "Build by day, survive by night",
+    "keywords": "survivor,roguelite,island,crafting,cozy,bullet heaven,one hand,lighthouse,auto battle,builder",
+    "promotionalText": "Gather shells and driftwood by day, build lighthouses and lanterns, then survive three minutes of creeping mist. The cozier your island, the easier the night.",
+    "description": "Cozy island life by day. A three-minute survivor run by night.\n\nDAY: BUILD YOUR ISLAND\nPick up glinting shells, driftwood, flowers and pebbles on the beach. The tide brings new finds every day. Build a lighthouse, flower lanterns, fences, a lookout and more. Grant the wishes of tiny islanders and they'll move in — and join you at night.\n\nNIGHT: SURVIVE THE MIST\nPurple mist swarms the island. Touch anywhere and drag to walk — attacks are automatic. Everything you built by day fights for you: the lighthouse widens your light and sweeps the mist with its beam, fences push it back, lantern orbs circle around you. Gather glowsand to level up and pick one of three cards. At 2:30, the Great Mist rises.\n\nAN ISLAND THAT GROWS WITH EVERY DAWN\nSpend glowsand to upgrade your builds up to level 3. Each night is a little tougher. Track your streak and your longest night.\n\nFREE TO PLAY\n12 builds, 5 islanders, daily tides and nights — free forever.\n\nLANTERN ISLE PRO (ONE-TIME PURCHASE)\n- 6 more builds: Star Scope, Conch Cannon, Firefly Jar, Lantern Boat, Frost Lamp, Festival Tower\n- 3 more islanders: a sand fox, a barn owl and a hermit crab\n- The Endless Night: no dawn, just your best run\nFamily Sharing supported.\n\nPRIVACY\nYour island stays on this device. No login, no ads, no analytics."
   }
 }

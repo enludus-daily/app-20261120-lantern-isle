@@ -25,8 +25,10 @@ struct TideTests {
         var save = SaveData()
         let p = Tide.pickups(day: "d1")[0]
         let before = save.amount(p.material)
-        #expect(save.pick(p, day: "d1"))
-        #expect(!save.pick(p, day: "d1"))
+        let first = save.pick(p, day: "d1")
+        let second = save.pick(p, day: "d1")
+        #expect(first)
+        #expect(!second)
         #expect(save.amount(p.material) == before + p.amount)
     }
 
@@ -42,8 +44,10 @@ struct TideTests {
 struct BuildTests {
     @Test func startingMaterialsBuildTwoThings() {
         var save = SaveData()
-        #expect(save.build(Content.recipe(.lighthouse), pro: false) == .built(level: 1))
-        #expect(save.build(Content.recipe(.chimes), pro: false) == .built(level: 1))
+        let r1 = save.build(Content.recipe(.lighthouse), pro: false)
+        #expect(r1 == .built(level: 1))
+        let r2 = save.build(Content.recipe(.chimes), pro: false)
+        #expect(r2 == .built(level: 1))
         #expect(save.level(.lighthouse) == 1)
     }
 
@@ -58,7 +62,8 @@ struct BuildTests {
     @Test func notEnoughDoesNothing() {
         var save = SaveData()
         save.materials = [:]
-        #expect(save.build(Content.recipe(.tower), pro: false) == .short)
+        let r3 = save.build(Content.recipe(.tower), pro: false)
+        #expect(r3 == .short)
         #expect(save.level(.tower) == 0)
     }
 
@@ -75,14 +80,17 @@ struct BuildTests {
         let r = Content.recipe(.path)
         for _ in 0..<3 { save.build(r, pro: false) }
         #expect(save.level(.path) == 3)
-        #expect(save.build(r, pro: false) == .maxed)
+        let r4 = save.build(r, pro: false)
+        #expect(r4 == .maxed)
     }
 
     @Test func proBuildsAreLockedWithoutPro() {
         var save = SaveData()
         for m in Material.allCases { save.add(m, 99) }
-        #expect(save.build(Content.recipe(.cannon), pro: false) == .locked)
-        #expect(save.build(Content.recipe(.cannon), pro: true) == .built(level: 1))
+        let r5 = save.build(Content.recipe(.cannon), pro: false)
+        #expect(r5 == .locked)
+        let r6 = save.build(Content.recipe(.cannon), pro: true)
+        #expect(r6 == .built(level: 1))
     }
 
     @Test func everyPlotIsOnTheIslandAndApart() {
@@ -110,7 +118,8 @@ struct ResidentTests {
     @Test func firstWishMovesThemIn() {
         var save = SaveData()
         #expect(!save.movedIn(snip))
-        #expect(save.deliver(snip, pro: false) == .done(step: 1))
+        let r7 = save.deliver(snip, pro: false)
+        #expect(r7 == .done(step: 1))
         #expect(save.movedIn(snip))
     }
 
@@ -126,7 +135,8 @@ struct ResidentTests {
         var save = SaveData()
         for m in Material.allCases { save.add(m, 99) }
         for _ in 0..<3 { save.deliver(snip, pro: false) }
-        #expect(save.deliver(snip, pro: false) == .finished)
+        let r8 = save.deliver(snip, pro: false)
+        #expect(r8 == .finished)
         #expect(save.currentRequest(snip) == nil)
     }
 
@@ -134,7 +144,8 @@ struct ResidentTests {
         var save = SaveData()
         for m in Material.allCases { save.add(m, 99) }
         let fox = Content.residents.first { $0.pro }!
-        #expect(save.deliver(fox, pro: false) == .locked)
+        let r9 = save.deliver(fox, pro: false)
+        #expect(r9 == .locked)
     }
 
     @Test func movedInIslanderJoinsTheNight() {

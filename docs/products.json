@@ -4,14 +4,22 @@
     {
       "type": "NON_CONSUMABLE",
       "productId": "com.enludus.daily.015.pro",
-      "referenceName": "Pro",
+      "referenceName": "Lantern Isle Pro",
       "price": 480,
       "familySharable": true,
-      "reviewNote": "Pro を買うと、すべての〇〇と詳しい振り返りが使えます。課金の画面は設定 > Pro から開けます。",
+      "reviewNote": "Pro を買うと、作り物が 6 つ（星の望遠鏡・ほら貝の大砲・ホタルのびん・灯りの小舟・雪あかり・祭りのやぐら。どれも夜の新しい攻撃）、住人が 3 人（夜の仲間）、終わらない夜（エンドレスの遊び方）が使えます。課金の画面は 昼の島 > 右上の設定 > 灯り島 Pro の「見る」から開けます。最初の夜明けのあとにも一度だけ出ます。",
       "reviewScreenshot": "docs/iap/paywall.png",
       "localizations": [
-        {"locale": "ja", "name": "Pro", "description": "すべての〇〇と詳しい振り返り"},
-        {"locale": "en-US", "name": "Pro", "description": "All 〇〇 and detailed reviews"}
+        {
+          "locale": "ja",
+          "name": "灯り島 Pro",
+          "description": "作り物6つ・住人3人・終わらない夜"
+        },
+        {
+          "locale": "en-US",
+          "name": "Lantern Isle Pro",
+          "description": "6 builds, 3 islanders, Endless Night"
+        }
       ]
     }
   ]
