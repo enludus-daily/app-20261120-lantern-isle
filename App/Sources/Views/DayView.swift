@@ -186,12 +186,13 @@ struct IslandBoard: View {
                     Button {
                         model.pick(p)
                     } label: {
-                        Color.clear.frame(width: 44, height: 44).contentShape(Circle())
+                        Circle().fill(Color.white.opacity(0.001)).frame(width: 44, height: 44).contentShape(Circle())
                     }
                     .buttonStyle(.plain)
                     .position(q)
                     .accessibilityLabel(trf("%@ ×%d を拾う", "Pick up %@ ×%d", p.material.name, p.amount))
-                    .accessibilityIdentifier("main.pickup\(p.id)")
+                    // 流れのテストで押す 2 つだけ main. の印（全部に付けると、毎回の検査で待ちが増える）
+                    .accessibilityIdentifier(p.id < 2 ? "main.pickup\(p.id)" : "pickup\(p.id)")
                     .transition(.scale(scale: 1.6).combined(with: .opacity))
                 }
             }

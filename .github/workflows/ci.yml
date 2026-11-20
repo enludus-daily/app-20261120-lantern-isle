@@ -25,7 +25,7 @@ jobs:
       extra-test-destination: "platform=iOS Simulator,name=iPhone 17,OS=latest"
       screenshot-device: iPhone Duo
       # 撮る画面（アプリが起動引数 -screenshotScene <名前> で開く画面。@dark でダークモード）。手順書 9.5
-      screenshot-scenes: launch@en onboarding_ja onboarding@en day_ja day@en craft_ja craft@en residents_ja residents@en built_ja night_ja night@en levelup_ja levelup@en shade_ja pro_ja pro@en result_ja result@en fail_ja fail@en records_ja records@en empty_ja settings_ja settings@en paywall_ja paywall@en
+      screenshot-scenes: onboarding_ja onboarding@en day_ja day@en craft_ja craft@en residents_ja residents@en night_ja night@en levelup_ja levelup@en pro_ja pro@en result_ja result@en fail_ja fail@en records_ja records@en settings_ja settings@en paywall_ja paywall@en
       # YouTube の「AI が毎日アプリを作る」シリーズ用：起動引数 -demo の再生を英語で録る（artifact demo-video）。手順書 7〜9
       demo-video: en
       guard-disabled: ${{ vars.DAILY_GUARD_DISABLED == 'true' && 'true' || 'false' }}
