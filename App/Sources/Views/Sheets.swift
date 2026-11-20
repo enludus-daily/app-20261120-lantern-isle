@@ -112,7 +112,8 @@ struct CraftRow: View {
             }
             .buttonStyle(SquishStyle())
             .disabled(maxed)
-            .accessibilityIdentifier("main.build_" + recipe.id)
+            // 流れのテストで押す 1 つだけ main. の印（一覧の下の方は画面の外にあるため）
+            .accessibilityIdentifier(recipe.kind == .lighthouse ? "main.build_lighthouse" : "build_" + recipe.id)
         }
         .padding(10)
         .background(RoundedRectangle(cornerRadius: Radius.card, style: .continuous).fill(.white.opacity(0.7)))
@@ -187,7 +188,7 @@ struct ResidentRow: View {
                         .background(Capsule().fill(locked ? Night.mistDeep : ready ? Day.coralDeep : Day.sand))
                 }
                 .buttonStyle(SquishStyle())
-                .accessibilityIdentifier("main.give_" + resident.id)
+                .accessibilityIdentifier("give_" + resident.id)
             }
         }
         .padding(10)
@@ -230,7 +231,7 @@ struct RecordsSheet: View {
                         model.startNight(endless: true)
                     }
                     .buttonStyle(ChunkyButtonStyle(fill: Night.amberDeep, edge: Color(hex: 0xB8692A), height: 50))
-                    .accessibilityIdentifier("main.endless")
+                    .accessibilityIdentifier("endless")
                 }
                 .padding(14)
                 .background(RoundedRectangle(cornerRadius: Radius.card, style: .continuous).fill(Night.panel))
