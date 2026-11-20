@@ -420,7 +420,7 @@ struct DayBar: View {
         .padding(.top, 10)
         .padding(.bottom, 6)
         .frame(maxWidth: .infinity)
-        .background(Day.sand.opacity(0.96).ignoresSafeArea(edges: .bottom))
+        .background(Day.sand.opacity(0.96).ignoresSafeArea(edges: [.bottom, .horizontal]))
     }
 }
 
