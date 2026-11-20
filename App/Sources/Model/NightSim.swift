@@ -101,7 +101,7 @@ struct NightSim {
     static let world = 1400.0
     static let duration = 180.0
     static let shadeTime = 150.0
-    static let maxEnemies = 150
+    static let maxEnemies = 170
 
     let loadout: Loadout
     private(set) var rng: SeededRandom
@@ -176,7 +176,7 @@ struct NightSim {
         hp = maxHP
         speed = 125 * (1 + 0.12 * Double(loadout.lv(.path)))
         let gullBonus = loadout.helpers.filter { $0.kind == .magnet }.reduce(0.0) { $0 + 45 * Double($1.level) }
-        magnet = 70 + 45 * Double(loadout.lv(.windmill)) + gullBonus
+        magnet = 110 + 45 * Double(loadout.lv(.windmill)) + gullBonus
         light = 170 + 55 * Double(loadout.lv(.lighthouse))
         power = 1 + 0.1 * Double(loadout.lv(.festival))
         // 柵：たき火のまわりの輪（ところどころ切れ目）
@@ -325,7 +325,7 @@ struct NightSim {
 
     private mutating func spawn(_ dt: Double) {
         let n = Double(loadout.night - 1)
-        let rate = (0.9 + time * 0.022) * (1 + 0.05 * n)
+        let rate = (1.4 + time * 0.034) * (1 + 0.06 * n)
         spawnCarry += rate * dt
         let hpScale = 1 + 0.07 * n
         while spawnCarry >= 1 {
@@ -347,11 +347,11 @@ struct NightSim {
 
     private mutating func spawnEnemy(_ kind: EnemyKind, hpScale: Double) {
         let angle = rng.unit() * 2 * .pi
-        let pos = player + CGPoint.polar(angle, 540 + rng.unit() * 120)
+        let pos = player + CGPoint.polar(angle, 400 + rng.unit() * 100)
         let (hp, speed, radius, touch, xp): (Double, Double, Double, Double, Int) = switch kind {
-        case .wisp: (4, 44, 12, 9, 1)
-        case .dart: (3, 92, 9, 7, 1)
-        case .lump: (20, 31, 19, 15, 3)
+        case .wisp: (5, 52, 12, 9, 1)
+        case .dart: (3, 100, 9, 7, 1)
+        case .lump: (24, 34, 19, 15, 3)
         case .shade: (280, 40, 42, 26, 24)
         }
         nextID += 1

@@ -400,12 +400,12 @@ struct PaywallSheet: View {
                             }
                         }
                     } label: {
-                        Text(product.map { trf("%@ で Pro にする", "Get Pro for %@", $0.displayPrice) } ?? tr("いまは購入できません", "Not available right now"))
+                        Text(product.map { trf("%@ で Pro にする", "Get Pro for %@", $0.displayPrice) } ?? (model.still ? trf("%@ で Pro にする", "Get Pro for %@", Lang.isJapanese ? "¥480" : "$2.99") : tr("いまは購入できません", "Not available right now")))
                     }
                     .buttonStyle(ChunkyButtonStyle(fill: Night.amberDeep, edge: Color(hex: 0xB8692A)))
                     .disabled(product == nil || busy || model.isPro)
                     .accessibilityIdentifier("main.buy")
-                    if store.loadState == .unavailable {
+                    if store.loadState == .unavailable && !model.still {
                         Text(tr("App Store につながりません。通信を確かめて、あとでもう一度開いてください", "Can't reach the App Store. Check your connection and try again later."))
                             .font(Fonts.body(12)).foregroundStyle(Night.textSoft)
                     }

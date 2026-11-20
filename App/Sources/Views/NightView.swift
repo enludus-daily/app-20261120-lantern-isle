@@ -350,7 +350,7 @@ enum NightPainter {
         }
         // 闇（灯りの届かない所は暗い）
         ctx.drawLayer { layer in
-            layer.fill(Path(CGRect(origin: .zero, size: size)), with: .color(Night.sky.opacity(0.78)))
+            layer.fill(Path(CGRect(origin: .zero, size: size)), with: .color(Night.sky.opacity(0.6)))
             layer.blendMode = .destinationOut
             var lights: [(CGPoint, Double)] = [(s(sim.player), sim.light)]
             if sim.loadout.lv(.bonfire) > 0 { lights.append((s(sim.bonfire), sim.bonfireRadius * 1.2)) }
