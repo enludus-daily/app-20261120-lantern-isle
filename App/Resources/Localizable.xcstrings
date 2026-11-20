@@ -1,42 +1,1234 @@
 {
   "sourceLanguage": "ja",
   "strings": {
-    "はじめる": {
+    "%@ ×%d を拾う": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Start"
+            "value": "Pick up %@ ×%d"
           }
         }
       }
     },
-    "リセット": {
+    "%@ ができた": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Reset"
+            "value": "%@ built"
           }
         }
       }
     },
-    "1 たす": {
+    "%@ がよろこんだ": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Add 1"
+            "value": "%@ is delighted"
           }
         }
       }
     },
-    "回数 %lld": {
+    "%@ がレベル %d に": {
+      "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Count %lld"
+            "value": "%@ is now level %d"
+          }
+        }
+      }
+    },
+    "%@ が引っ越してきた": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ moved in!"
+          }
+        }
+      }
+    },
+    "%@ で Pro にする": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Get Pro for %@"
+          }
+        }
+      }
+    },
+    "%@（引っ越し前）": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ (wants to move in)"
+          }
+        }
+      }
+    },
+    "3 分で終わらない夜。150 秒ごとに大もやが来る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No dawn. A Great Mist rises every 150 seconds."
+          }
+        }
+      }
+    },
+    "App Store につながりません。通信を確かめて、あとでもう一度開いてください": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Can't reach the App Store. Check your connection and try again later."
+          }
+        }
+      }
+    },
+    "Lv %d · 砂 %d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lv %d · Sand %d"
+          }
+        }
+      }
+    },
+    "Pro で遊べる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Unlock with Pro"
+          }
+        }
+      }
+    },
+    "Pro：ありがとう！": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pro: thank you!"
+          }
+        }
+      }
+    },
+    "いちばん長い夜": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Longest night"
+          }
+        }
+      }
+    },
+    "いまは購入できません": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Not available right now"
+          }
+        }
+      }
+    },
+    "お礼：%@ ×%d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Thanks: %@ ×%d"
+          }
+        }
+      }
+    },
+    "すべての攻撃 +10%": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All damage +10%"
+          }
+        }
+      }
+    },
+    "ひとつ選ぶ（この夜だけ）": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pick one (for this night)"
+          }
+        }
+      }
+    },
+    "ひと休み": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catch a breath"
+          }
+        }
+      }
+    },
+    "まだ夜を越えていない。昼に灯りを作って、夜へ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No nights yet. Build a light, then face the night."
+          }
+        }
+      }
+    },
+    "もやが島に押し寄せる。指を置いて歩くだけ。攻撃は自動": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mist swarms the island. Just touch and drag to walk — you attack automatically."
+          }
+        }
+      }
+    },
+    "もやにのまれた…": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Swallowed by mist…"
+          }
+        }
+      }
+    },
+    "レベル %d！": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LEVEL %d!"
+          }
+        }
+      }
+    },
+    "一度に飛ぶ火花 +1": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "+1 spark per volley"
+          }
+        }
+      }
+    },
+    "一度買えば、ずっと。家族でも使える": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buy once, keep forever. Family Sharing included."
+          }
+        }
+      }
+    },
+    "丸い石": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pebbles"
+          }
+        }
+      }
+    },
+    "住人": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Islanders"
+          }
+        }
+      }
+    },
+    "住人が 3 人増える": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "3 more islanders"
+          }
+        }
+      }
+    },
+    "体力 %d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HP %d"
+          }
+        }
+      }
+    },
+    "体力を 50 回復": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Heal 50 HP"
+          }
+        }
+      }
+    },
+    "体力を上げる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "More stamina"
+          }
+        }
+      }
+    },
+    "作った物が、夜の力に": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What you build fights for you"
+          }
+        }
+      }
+    },
+    "作り物が 6 つ増える": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "6 more things to build"
+          }
+        }
+      }
+    },
+    "作る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Build"
+          }
+        }
+      }
+    },
+    "光る砂": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Glowsand"
+          }
+        }
+      }
+    },
+    "光る砂 +%d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Glowsand +%d"
+          }
+        }
+      }
+    },
+    "効果音": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sound effects"
+          }
+        }
+      }
+    },
+    "夜の仲間：%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night buddy: %@"
+          }
+        }
+      }
+    },
+    "夜の島。画面のどこかに指を置いて動かすと歩く。攻撃は自動": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The island at night. Touch anywhere and drag to walk. Attacks are automatic."
+          }
+        }
+      }
+    },
+    "夜の記録": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night Log"
+          }
+        }
+      }
+    },
+    "夜は、3 分生きのびる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By night, survive 3 minutes"
+          }
+        }
+      }
+    },
+    "夜へ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nightfall"
+          }
+        }
+      }
+    },
+    "夜明けの来ない夜で、最長記録に挑む。150 秒ごとに大もや": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No dawn — chase your longest run. A Great Mist every 150 seconds"
+          }
+        }
+      }
+    },
+    "夜明けを見た": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dawns reached"
+          }
+        }
+      }
+    },
+    "夜明け！": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dawn!"
+          }
+        }
+      }
+    },
+    "夜：%@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night: %@"
+          }
+        }
+      }
+    },
+    "大もやが来た": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The Great Mist rises"
+          }
+        }
+      }
+    },
+    "届ける": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Give"
+          }
+        }
+      }
+    },
+    "島。作った物 %d、住人 %d 人、浜の拾い物 %d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The island. %d built, %d residents, %d beach finds"
+          }
+        }
+      }
+    },
+    "島のデータはこの端末の中だけにあり、外へ送りません。ログイン・広告・解析はありません。": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your island lives only on this device. Nothing is sent anywhere — no login, ads or analytics."
+          }
+        }
+      }
+    },
+    "島の力を上げる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Island power"
+          }
+        }
+      }
+    },
+    "島の音と、手ざわり": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sound and feel"
+          }
+        }
+      }
+    },
+    "島へ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "To the island"
+          }
+        }
+      }
+    },
+    "強く": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Upgrade"
+          }
+        }
+      }
+    },
+    "払ったもや": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mist cleared"
+          }
+        }
+      }
+    },
+    "承認を待っています": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Waiting for approval"
+          }
+        }
+      }
+    },
+    "拾える距離 +40": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pickup range +40"
+          }
+        }
+      }
+    },
+    "指を置いて、動かして歩く": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Touch and drag to move"
+          }
+        }
+      }
+    },
+    "振動": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Haptics"
+          }
+        }
+      }
+    },
+    "新記録": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "New best"
+          }
+        }
+      }
+    },
+    "明かりを広げる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wider light"
+          }
+        }
+      }
+    },
+    "星の望遠鏡・ほら貝の大砲・ホタルのびん・灯りの小舟・雪あかり・祭りのやぐら。どれも夜の新しい戦い方になる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Star Scope, Conch Cannon, Firefly Jar, Lantern Boat, Frost Lamp and Festival Tower — each a new way to fight the night"
+          }
+        }
+      }
+    },
+    "昼にもどった": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back to daylight"
+          }
+        }
+      }
+    },
+    "昼にもどる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back to day"
+          }
+        }
+      }
+    },
+    "昼に作った物が、夜の力になる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "What you build by day fights for you at night"
+          }
+        }
+      }
+    },
+    "昼の島にもどる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Back to the island"
+          }
+        }
+      }
+    },
+    "昼は、島づくり": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "By day, build"
+          }
+        }
+      }
+    },
+    "最大": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Max"
+          }
+        }
+      }
+    },
+    "最大の体力 +20、20 回復": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Max HP +20, heal 20"
+          }
+        }
+      }
+    },
+    "最近 %d 回の夜。夜明けまで %d 回": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Last %d nights. %d reached dawn"
+          }
+        }
+      }
+    },
+    "最長 %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Best %@"
+          }
+        }
+      }
+    },
+    "次は「%@」を作れる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next up: %@"
+          }
+        }
+      }
+    },
+    "次は第 %d 夜 · 夜明け %d 回 · 連続 %d 日": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next: Night %d · %d dawns · %d-day streak"
+          }
+        }
+      }
+    },
+    "次へ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Next"
+          }
+        }
+      }
+    },
+    "歩く速さ +10%": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Move speed +10%"
+          }
+        }
+      }
+    },
+    "残り %@、体力 %d": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ left, HP %d"
+          }
+        }
+      }
+    },
+    "流木": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Driftwood"
+          }
+        }
+      }
+    },
+    "浜で貝や流木を拾って、灯台やランタンを作る。毎日の潮で拾い物が変わる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gather shells and driftwood on the beach, then build lighthouses and lanterns. The tide brings new finds every day."
+          }
+        }
+      }
+    },
+    "浜の花": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Beach flowers"
+          }
+        }
+      }
+    },
+    "火の玉を放つ砂ギツネ、遠くを射るメンフクロウ、守ってくれるヤドカリ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A fox that throws fireballs, an owl that snipes from afar, a hermit crab that shields you"
+          }
+        }
+      }
+    },
+    "火花の強さ +2": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spark damage +2"
+          }
+        }
+      }
+    },
+    "火花の間が 15% 短く": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Spark delay −15%"
+          }
+        }
+      }
+    },
+    "火花を一つ増やす": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One more spark"
+          }
+        }
+      }
+    },
+    "火花を強く": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hotter sparks"
+          }
+        }
+      }
+    },
+    "火花を速く": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Faster sparks"
+          }
+        }
+      }
+    },
+    "灯りから離れないで": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Stay near the light"
+          }
+        }
+      }
+    },
+    "灯り島": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lantern Isle"
+          }
+        }
+      }
+    },
+    "灯り島 Pro": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lantern Isle Pro"
+          }
+        }
+      }
+    },
+    "灯台は見える範囲を広げ、柵はもやを押し返す。住人は夜の仲間になる。島のデータは端末の中だけ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lighthouses widen your light, fences push the mist back, islanders become night buddies. Your island stays on this device."
+          }
+        }
+      }
+    },
+    "無料のままでも、12 の作り物・5 人の住人・毎日の潮と夜はずっと遊べます": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Free forever: 12 builds, 5 islanders, daily tides and nights."
+          }
+        }
+      }
+    },
+    "生きのびた": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Survived"
+          }
+        }
+      }
+    },
+    "生きのびた時間が、毎晩ここにたまる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Every night you survive adds up here"
+          }
+        }
+      }
+    },
+    "砂を引き寄せる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sand magnet"
+          }
+        }
+      }
+    },
+    "第 %d 夜": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "NIGHT %d"
+          }
+        }
+      }
+    },
+    "第 %d 夜を越えた。島がまた少し強くなる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Night %d survived. The island grows stronger."
+          }
+        }
+      }
+    },
+    "終わらない夜": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Endless Night"
+          }
+        }
+      }
+    },
+    "終わらない夜へ": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enter the Endless Night"
+          }
+        }
+      }
+    },
+    "終わらない夜を %@ 生きのびた": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You lasted %@ in the Endless Night"
+          }
+        }
+      }
+    },
+    "見える範囲 +40": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Light radius +40"
+          }
+        }
+      }
+    },
+    "見る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "See"
+          }
+        }
+      }
+    },
+    "設定": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Settings"
+          }
+        }
+      }
+    },
+    "貝がら": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Shells"
+          }
+        }
+      }
+    },
+    "購入できませんでした。時間をおいてもう一度": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Purchase failed. Please try again later."
+          }
+        }
+      }
+    },
+    "購入を復元": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restore purchases"
+          }
+        }
+      }
+    },
+    "足を軽く": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lighter steps"
+          }
+        }
+      }
+    },
+    "連続の日（最高 %d）": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Day streak (best %d)"
+          }
+        }
+      }
+    },
+    "遊び方をもう一度見る": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Show the tutorial again"
+          }
+        }
+      }
+    },
+    "長い夜が明けた": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "The long night ends"
+          }
+        }
+      }
+    },
+    "閉じる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Close"
+          }
+        }
+      }
+    },
+    "集めた砂で島を作り直して、もう一度": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Build with the sand you gathered, then try again"
+          }
+        }
+      }
+    },
+    "集めた砂は持ち帰れる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "You keep the sand you gathered"
+          }
+        }
+      }
+    },
+    "頼みごとはぜんぶかなえた": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "All wishes granted"
+          }
+        }
+      }
+    },
+    "頼みごとをかなえると、夜の仲間になる": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grant their wishes and they'll join you at night"
           }
         }
       }
